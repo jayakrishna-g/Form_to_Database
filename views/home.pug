@@ -1,0 +1,97 @@
+doctype html
+html(lang='en')
+  head
+    // Required meta tags
+    meta(charset='utf-8')
+    |     
+    meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
+    // Bootstrap CSS
+    link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css', integrity='sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm', crossorigin='anonymous')
+    |     
+    title Bank Applicaton
+    |     
+    style(type='text/css').
+      label{
+      font-style: bold;
+      }
+  |   
+  body
+    .container(style='padding: 50px;')
+      form(method='POST', action='/myroute')
+        .form-group
+          label(for='fName') First Name :
+          |     
+          input.form-control(type='text', name='firstname', id='', aria-describedby='emailHelp', placeholder='First Name')
+        |      
+        .form-group
+          label(for='LName') Last Name :
+          |     
+          input.form-control(type='text', name='lastname', id='', aria-describedby='emailHelp', placeholder='Last Name')
+        |      
+        .form-group
+          label(for='LName') Gender
+          |       
+          .form-check
+            input#exampleRadios1.form-check-input(type='radio', name='Male', value='option1')
+            |     
+            label.form-check-label(for='exampleRadios1')
+              | Male
+          |   
+          .form-check
+            input#exampleRadios2.form-check-input(type='radio', name='Female', value='option2')
+            |     
+            label.form-check-label(for='exampleRadios2')
+              | Female
+          |   
+          .form-check.disabled
+            input#exampleRadios3.form-check-input(type='radio', name='Other', value='option3')
+            |     
+            label.form-check-label(for='exampleRadios3')
+              | Other
+        .form-group
+          label(for='phone') Phone :
+          |     
+          input.form-control(type='phone', name='phone', id='', placeholder='Phone')
+        .form-group
+          label(for='exampleInputEmail1') Email address :
+          |     
+          input#exampleInputEmail1.form-control(type='email', name='email', aria-describedby='emailHelp', placeholder='Enter email')
+        .form-group
+          label(for='phone') DOB :
+          |     
+          input.form-control(type='date', name='DOB', id='', placeholder='Phone')
+        .form-group
+          label(for='accountnumber') Account Number :
+          |   
+          input.form-control(type='text', name='accountnumber', id='', aria-describedby='emailHelp', placeholder='Account Number')
+        |   
+        |      
+        .form-group
+          label(for='LName') Account Type :
+          |       
+          .form-check
+            input#exampleRadios1.form-check-input(name='Savings', type='radio', value='Savings')
+            |     
+            label.form-check-label(for='exampleRadios1')
+              | Savings
+          |   
+          .form-check
+            input#exampleRadios2.form-check-input(name='Current', type='radio', value='Current')
+            |     
+            label.form-check-label(for='exampleRadios2')
+              | Current
+          .form-group
+            label(for='exampleInputEmail1') Address
+            |     
+            input#exampleInputEmail1.form-control(type='text', name='Address', aria-describedby='emailHelp', placeholder='')
+        |   
+        |  
+        |   
+        button.btn.btn-primary(type='submit') Submit
+    // Optional JavaScript
+    // jQuery first, then Popper.js, then Bootstrap JS
+    script(src='https://code.jquery.com/jquery-3.2.1.slim.min.js', integrity='sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN', crossorigin='anonymous')
+    |     
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js', integrity='sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q', crossorigin='anonymous')
+    |     
+    script(src='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js', integrity='sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl', crossorigin='anonymous')

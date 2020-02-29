@@ -8,7 +8,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
-    <title>Hello, world!</title>
+    <title>Bank Applicaton</title>
 
     <style type="text/css">
       label{
@@ -19,35 +19,35 @@
   <body>
 
   <div class="container" style="padding: 50px;">  
-  <form>
+  <form method="POST" action="/myroute">
 
      <div class="form-group">
-    <label for="fName">First Name</label>
-    <input type="text" class="form-control" id="" aria-describedby="emailHelp" placeholder="First Name">
+    <label for="fName">First Name :</label>
+    <input type="text" name="firstname" class="form-control" id="" aria-describedby="emailHelp" placeholder="First Name">
     </div>
 
      <div class="form-group">
-    <label for="LName">Last Name</label>
-    <input type="text" class="form-control" id="" aria-describedby="emailHelp" placeholder="Last Name">
+    <label for="LName">Last Name :</label>
+    <input type="text" name="lastname" class="form-control" id="" aria-describedby="emailHelp" placeholder="Last Name">
     </div>
 
 
      <div class="form-group">
       <label for="LName">Gender</label>
       <div class="form-check">
-    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" >
+    <input class="form-check-input" type="radio" name="Male" id="exampleRadios1" value="option1" >
     <label class="form-check-label" for="exampleRadios1">
       Male
     </label>
   </div>
   <div class="form-check">
-    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+    <input class="form-check-input" type="radio" name="Female" id="exampleRadios2" value="option2">
     <label class="form-check-label" for="exampleRadios2">
       Female
     </label>
   </div>
   <div class="form-check disabled">
-    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3" >
+    <input class="form-check-input" type="radio" name="Other" id="exampleRadios3" value="option3" >
     <label class="form-check-label" for="exampleRadios3">
       Other
     </label>
@@ -57,47 +57,48 @@
 
 
 <div class="form-group">
-    <label for="phone">Phone</label>
-    <input type="phone" class="form-control" id="" placeholder="Phone">
+    <label for="phone">Phone :</label>
+    <input type="phone" name="phone" class="form-control" id="" placeholder="Phone">
   </div>
 
 
 <div class="form-group">
-    <label for="exampleInputEmail1">Email address</label>
-    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+    <label for="exampleInputEmail1">Email address :</label>
+    <input type="email" name="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
   
   </div>
 
 <div class="form-group">
-    <label for="phone">DOB</label>
-    <input type="date" class="form-control" id="" placeholder="Phone">
+    <label for="phone">DOB :</label>
+    <input type="date" name="DOB" class="form-control" id="" placeholder="Phone">
   </div>
 
+<div class="form-group">
+  <label for="accountnumber">Account Number :</label>
+  <input type="text" name="accountnumber" class="form-control" id="" aria-describedby="emailHelp" placeholder="Account Number">
+  </div>  
+
      <div class="form-group">
-      <label for="LName">Account Type</label>
+      <label for="LName">Account Type :</label>
       <div class="form-check">
-    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" >
+    <input class="form-check-input" name="Savings" type="radio"  id="exampleRadios1" value="Savings" >
     <label class="form-check-label" for="exampleRadios1">
       Savings
     </label>
   </div>
   <div class="form-check">
-    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+    <input class="form-check-input" name="Current" type="radio"  id="exampleRadios2" value="Current">
     <label class="form-check-label" for="exampleRadios2">
       Current
     </label>
   </div>
 
-
-    </div>
-
-
 <div class="form-group">
     <label for="exampleInputEmail1">Address</label>
-    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="">
+    <input type="text" name="Address" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="">
   
   </div>
-
+</div>
 
   
  
